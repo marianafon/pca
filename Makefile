@@ -1,4 +1,7 @@
-CPPFLAGS=-g -Wall
+#CPPFLAGS=-g -Wall
+CPPFLAGS=-g -ftree-vectorize -Wall -O2 -fopt-info-vec-optimized #optimized/missed/all
+#CPPFLAGS=-g -O2 -ftree-vectorize -msse2 -ftree-vectorizer-verbose=10
+
 
 BOOST_HOME=/usr
 TNT_HOME= ./lib/tnt
