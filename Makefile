@@ -1,5 +1,10 @@
+##1) Sem vetorização
 #CPPFLAGS=-g -Wall
-CPPFLAGS=-g -ftree-vectorize -Wall -O2 -fopt-info-vec-optimized #optimized/missed/all
+
+#2) Com vetorização (O que mostra melhor) -> Escolher uma dessas opções para ver o que foi vetorizado ou não: #optimized/missed/all
+CPPFLAGS=-g -ftree-vectorize -Wall -O2 -fopt-info-vec-optimized 
+
+#3) Com vetorização (O que não mostra muito bem o que foi vetorizado)
 #CPPFLAGS=-g -O2 -ftree-vectorize -msse2 -ftree-vectorizer-verbose=10
 
 BOOST_HOME=/usr
