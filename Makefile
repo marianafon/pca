@@ -1,11 +1,17 @@
 ##1) Sem vetorização
 #CPPFLAGS=-g -Wall
 
-#2) Com vetorização (O que mostra melhor) -> Escolher uma dessas opções para ver o que foi vetorizado ou não: #optimized/missed/all
-CPPFLAGS=-g -ftree-vectorize -Wall -O2 -fopt-info-vec-optimized 
+#2) Com vetorização -> Escolher uma dessas opções #optimized/missed/all
+#CPPFLAGS=-g -ftree-vectorize -Wall -O2 -fopt-info-vec-optimized
 
-#3) Com vetorização (O que não mostra muito bem o que foi vetorizado)
+#3) Com vetorização
 #CPPFLAGS=-g -O2 -ftree-vectorize -msse2 -ftree-vectorizer-verbose=10
+
+#4) Com vetorização -> Escolher uma dessas opções #optimized/missed/all ffast-math
+CPPFLAGS=-g -ftree-vectorize -Wall -O2 -fopt-info-vec-optimized -ffast-math
+
+#5) Com vetorização -> Escolher uma dessas opções #optimized/missed/all ffast-math
+#CPPFLAGS=-g -ftree-vectorize -Wall -O2 -fopt-info-vec-optimized -ffast-math -msse2
 
 BOOST_HOME=/usr
 TNT_HOME= ./lib/tnt
