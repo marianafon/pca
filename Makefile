@@ -2,13 +2,13 @@
 #CPPFLAGS=-g -Wall
 
 #2) Com vetorização -> Escolher uma dessas opções #optimized/missed/all
-#CPPFLAGS=-g -ftree-vectorize -Wall -O2 -fopt-info-vec-optimized
+CPPFLAGS=-g -ftree-vectorize -Wall -O2 -fopt-info-vec-optimized
 
 #3) Com vetorização
 #CPPFLAGS=-g -O2 -ftree-vectorize -msse2 -ftree-vectorizer-verbose=10
 
 #4) Com vetorização -> Escolher uma dessas opções #optimized/missed/all ffast-math
-CPPFLAGS=-g -ftree-vectorize -Wall -O2 -fopt-info-vec-optimized -ffast-math
+#CPPFLAGS=-g -ftree-vectorize -Wall -O2 -fopt-info-vec-optimized -ffast-math
 
 #5) Com vetorização -> Escolher uma dessas opções #optimized/missed/all ffast-math
 #CPPFLAGS=-g -ftree-vectorize -Wall -O2 -fopt-info-vec-optimized -ffast-math -msse2
